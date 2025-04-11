@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+.icon-eye{
+    mask-image: url(eye.svg);
+    -webkit-mask-image: url(eye.svg);
+}
+.icon-check{
+    mask-image: url(check.svg);
+    -webkit-mask-image: url(check.svg);
+}
+.icon-error{
+    mask-image: url(error.svg);
+    -webkit-mask-image: url(error.svg);
+}
+.icon-arrow{
+    mask-image: url(arrow.svg);
+    -webkit-mask-image: url(arrow.svg);
+}
+.read-more-icon{
+    mask-image: url(arrow.svg);
+    -webkit-mask-image: url(arrow.svg);
+}
+.self-study-arrow{
+    mask-image: url(arrow.svg);
+    -webkit-mask-image: url(arrow.svg);
+}
+.bread-icon-back{
+    mask-image: url(arrow.svg);
+    -webkit-mask-image: url(arrow.svg);
+}
+.icon-arrow-small{
+    mask-image: url(arrow2.svg);
+    -webkit-mask-image: url(arrow2.svg);
+}
+.module-icon-arrow{
+    mask-image: url(arrow.svg);
+    -webkit-mask-image: url(arrow.svg);
+}
+.beginner-link-icon{
+    mask-image: url(arrow.svg);
+    -webkit-mask-image: url(arrow.svg);
+}
+.grammar-arrow{
+    mask-image: url(arrow.svg);
+    -webkit-mask-image: url(arrow.svg);
+}
+.black-arrow{
+    mask-image: url(arrow.svg);
+    -webkit-mask-image: url(arrow.svg);
+}
+.check_circle{
+    mask-image: url(check_circle.svg);
+    -webkit-mask-image: url(check_circle.svg);
+}

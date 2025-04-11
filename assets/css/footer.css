@@ -1,0 +1,137 @@
+
+.footer {
+    padding: 0 20px;
+}
+
+.footer-wrapper {
+    border-radius: 40px 40px 0 0;
+    background: var(--white2);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 85px 160px 85px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-body {
+    gap: 140px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-menu-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--gray);
+    opacity: .5;
+
+}
+
+.footer-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 186px;
+    width: 100%;
+    row-gap: 25px;
+    column-gap: 56px;
+    margin-top: 26px;
+}
+
+.footer-menu ul li a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: start;
+    color: var(--black2);
+    min-width: 63px;
+    white-space: nowrap;
+    transition: .3s;
+
+
+}
+.footer-menu ul li a:hover {
+    color: var(--blueviolet);
+
+}
+.footer-clue {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: .5;
+    color: var(--gray);
+    margin-top: auto;
+}
+
+.footer-menu-column {
+    gap: 120px;
+}
+
+.footer-btn {
+    height: max-content;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 13px 28px;
+
+}
+.footer-clue-mobile{
+    display: none;
+}
+
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+
+@media (max-width: 992px) {
+    .footer-body {
+        gap: 40px;
+    }
+    .footer-wrapper{
+        padding: 48px 0 20px 0;
+        border-radius: 0;
+    }
+    .footer-menu ul li a{
+        white-space: wrap;
+    }
+    .footer{
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-clue{
+        display: none;
+    }
+    .footer-clue-mobile{
+        display: flex;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        opacity: .5;
+        color: var(--gray);
+        text-align: center;
+        margin: 20px auto 0 ;
+    }
+    .footer-body{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .footer-menu-column{
+        gap: 103px;
+    }
+    .footer-menu ul{
+        gap: 45px;
+    }
+    .footer-menu:nth-child(2){
+        margin-right: 21px;
+    }
+}

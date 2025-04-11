@@ -1,0 +1,322 @@
+
+.about-us-section {
+    position: relative;
+    z-index: 2;
+    min-height: 626px;
+    padding: 154px 0 60px 0;
+}
+
+.about-us-decor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.about-us-decor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0 ;
+    border-radius: 0 0 40px 40px;
+}
+
+.about-us-title {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 64px;
+    text-align: center;
+    color: var(--black2);
+
+}
+
+
+.about-us-items {
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about-us-item {
+    padding: 24px 36px;
+    min-height: 100px;
+    flex: 1 1 30%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 16px 0px var(--light-black);
+    background: var(--white2);
+    gap: 4px;
+}
+
+
+.about-us-icon {
+    max-width: 24px;
+    width: 100%;
+    height: 24px;
+}
+
+.about-us-item p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black2);
+
+}
+
+.about-big-item {
+    flex: 1 1 40%;
+
+}
+
+.about-us-clue {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black2);
+    max-width: 471px;
+    margin: 40px auto 0;
+
+}
+
+.about-project-cnt {
+    padding: 24px;
+    border-radius: 12px;
+    background: var(--white2);
+    box-shadow: 0px 0px 16px 0px var(--light-black);
+    max-width: 940px;
+    margin: 40px auto 0;
+
+}
+
+
+
+
+.about-project-cnt > :not(:last-child) {
+    margin: 0 0 20px 0;
+}
+
+.about-project-cnt p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--black2);
+
+}
+
+.contacts-section {
+    position: relative;
+    z-index: 2;
+    min-height: 910px;
+    padding: 154px 0 100px 0;
+}
+
+.contacts-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--gray);
+    text-align: center;
+    max-width: 588px;
+    margin: 20px auto 0;
+
+}
+
+.contacts-cnt {
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.contact-media {
+    max-width: 590px;
+    width: 100%;
+    height: 484px;
+}
+.contact-media img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28px;
+}
+
+.contacts-form {
+    background: var(--white2);
+    box-shadow: 0px 0px 16px 0px var(--light-black);
+    max-width: 592px;
+    width: 100%;
+    padding: 38px;
+    position: relative;
+    z-index: 2;
+    border-radius: 28px;
+    height: max-content;
+
+}
+
+.contacts-input-box{
+    gap: 20px;
+}
+.contact-input span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--gray);
+    margin-bottom: 4px;
+    display: block;
+
+}
+.contacts-inputs{
+    gap: 20px;
+
+}
+.contact-btn{
+    padding: 15px 40px;
+}
+.contacts-tools{
+    margin-top: 32px;
+    gap: 20px;
+}
+.contacts-tools .auth-agree{
+    margin-top: 0;
+}
+
+
+.agreement-cnt {
+    padding: 24px;
+    border-radius: 12px;
+    background: var(--white2);
+    box-shadow: 0px 0px 16px 0px var(--light-black);
+    max-width: 940px;
+    margin: 40px auto 0;
+
+}
+
+.agreement-cnt > :not(:last-child) {
+    margin: 0 0 20px 0;
+}
+
+.agreement-cnt p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--black2);
+
+}
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+    .contacts-cnt {
+        margin-top: 24px;
+        gap: 12px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+    .about-us-item {
+        flex: 1 1 40%;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-us-item {
+        max-width: 160px;
+        width: 100%;
+        min-height: 107px;
+        padding: 12px;
+    }
+
+    .about-us-item p {
+        line-height: 120%;
+    }
+
+    .about-us-section {
+        min-height: 661px;
+        padding: 118px 0 40px 0;
+    }
+
+    .about-us-decor img {
+        border-radius: 0 0 24px 24px;
+    }
+
+    .about-us-items {
+        margin-top: 24px;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .about-us-title {
+        font-size: 40px;
+        line-height: 44px;
+
+    }
+
+    .about-us-clue {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 24px auto 0;
+    }
+
+    .about-project-cnt {
+        margin: 24px auto 0;
+    }
+
+    .about-project-cnt p {
+        font-size: 16px;
+        line-height: 22px;
+
+    }
+    .contact-media {
+        height: 272px;
+    }
+    .contact-media img{
+        border-radius: 20px;
+    }
+    .contacts-form {
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .contacts-inputs {
+        gap: 12px;
+        flex-direction: column;
+    }
+    .contacts-input-box{
+        gap: 12px;
+
+    }
+    .contact-btn{
+        width: 100%;
+    }
+    .contacts-tools {
+        margin-top: 28px;
+        flex-direction: column-reverse;
+    }
+    .contacts-section {
+        min-height: 1178px;
+        padding: 148px 0 14px 0;
+    }
+    .contacts-text {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 16px auto 0;
+    }
+    .agreement-cnt p{
+        font-size: 16px;
+        line-height: 22px;
+
+    }
+    .agreement-cnt {
+        margin: 24px auto 0;
+    }
+}
