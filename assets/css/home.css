@@ -680,6 +680,9 @@
 
     .peculiarities-item-img {
         height: 124px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .light-blueviolet-item {
