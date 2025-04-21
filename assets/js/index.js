@@ -3,6 +3,9 @@ const menu = document.querySelector('.menu');
 const header = document.querySelector('header');
 const menuBg = document.querySelector('.menu-bg');
 const headerBody = document.querySelector('.header-body');
+const accountBurger = document.querySelector('.account-burger');
+const accountMenu = document.querySelector('.account-menu');
+const accountMenuBg = document.querySelector('.account-menu-bg');
 
 
 
@@ -32,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
             header.classList.add('active');
             menuBg.classList.add('active');
             headerBody.classList.add('active');
+            document.body.style.overflowY = 'hidden';
 
 
         }
@@ -42,13 +46,66 @@ document.addEventListener('DOMContentLoaded', function () {
             header.classList.remove('active');
             menuBg.classList.remove('active');
             headerBody.classList.remove('active');
+            document.body.style.overflowY = 'unset';
 
         }
     }
 
 
 
+    if (accountBurger){
+        accountBurger.addEventListener("click", function (e) {
+            if (accountMenu.classList.contains('active')) {
+                closeAccountMenu();
+            } else {
+                openAccountMenu();
+            }
+        });
+
+        accountMenuBg.addEventListener("click", function (e) {
+            if (accountMenu.classList.contains('active')) {
+                closeAccountMenu();
+            } else {
+                openAccountMenu();
+            }
+        });
+
+
+        function openAccountMenu() {
+            accountMenu.classList.add('active');
+            accountBurger.classList.add('active');
+            accountMenuBg.classList.add('active');
+            document.body.style.overflowY = 'hidden';
+
+
+
+        }
+
+        function closeAccountMenu() {
+            accountMenu.classList.remove('active');
+            accountBurger.classList.remove('active');
+            accountMenuBg.classList.remove('active');
+            document.body.style.overflowY = 'unset';
+
+        }
+
+    }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 window.addEventListener('scroll', function () {
     const headerTop = document.querySelector('header')
@@ -340,7 +397,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(modal){
         const closeBtn = document.getElementById('closeModalBtn');
-        document.querySelectorAll('.start-free').forEach(btn => {
+        document.querySelectorAll('.start-free,.subscribe-now').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
                 modal.classList.add('active');
@@ -358,7 +415,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.target === modal) {
                 modal.classList.remove('active');
                 document.body.style.overflow = '';
-
 
             }
         });

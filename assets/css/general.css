@@ -6,6 +6,9 @@
     --white2: #FFFFFF;
     --white3: #F3F3F5;
 
+    --white4: #F3F3FF;
+    --white5: #EEE4FF;
+
     --black: #000000;
     --black2: #141414;
 
@@ -30,6 +33,7 @@
 
 
     --red: #FF5964;
+    --red3: #FF636D;
     --red2: #FF6506;
     --light-red: #FFDDE6;
     --light-red2: #FFECC7;
@@ -38,6 +42,7 @@
     --light-green: #E6FFD3;
     --green: #A2F38E;
     --light-green2: #DAFFD1;
+    --green2: #437D16;
 
 
     --rose: #FF99F6;
@@ -59,7 +64,6 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     min-height: 100%;
 
 }
@@ -73,6 +77,15 @@ main {
     width: 100%;
     margin: 0 auto;
     padding: 0 14px;
+}
+.audio-player{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.audio-player audio {
+    width: 100%;
+    height: 32px;
 }
 
 .text-wrap {
@@ -734,7 +747,8 @@ main {
     .text-mobile {
         display: block;
     }
-    .materials-items{
+
+    .materials-items {
         gap: 12px;
     }
 }

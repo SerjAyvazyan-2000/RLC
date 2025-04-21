@@ -47,13 +47,21 @@
     color: var(--black2);
     min-width: 63px;
     white-space: nowrap;
-    transition: .3s;
+    transition: color 0.3s ease;
+    position: relative;
 
 
 }
-.footer-menu ul li a:hover {
-    color: var(--blueviolet);
-
+.footer-menu ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 3px;
+    width: 0;
+    background-color: var(--blueviolet);
+    transition: width 0.3s ease;
+    border-radius: 2px;
 }
 .footer-clue {
     font-weight: 400;
@@ -63,7 +71,9 @@
     color: var(--gray);
     margin-top: auto;
 }
-
+.footer-menu ul li a:hover::before {
+    width: 100%;
+}
 .footer-menu-column {
     gap: 120px;
 }

@@ -718,8 +718,23 @@
     max-width: 285px;
     width: 100%;
     gap: 5px;
+    transition: .3s;
 
 
+}
+
+.modal-verb:hover {
+    background: var(--blueviolet);
+
+}
+
+.modal-verb:hover p {
+    color: var(--black);
+
+}
+
+.modal-verb:hover .grammar-arrow {
+    background: var(--black);
 }
 
 .modal-verb p {
@@ -729,12 +744,16 @@
     color: var(--blueviolet);
     width: 100%;
     max-width: 209px;
+    transition: .3s;
+
 
 }
 
 .modal-verb .grammar-arrow {
     margin-top: 5px;
     margin-left: auto;
+    transition: .3s;
+
 }
 
 
@@ -753,6 +772,7 @@
     flex: 1 1 49%;
     width: 100%;
     gap: 5px;
+    transition: .3s;
 
 
 }
@@ -763,8 +783,24 @@
     line-height: 24px;
     color: var(--blueviolet);
     width: 100%;
+    transition: .3s;
 
 }
+
+.articles-item:hover {
+    background: var(--blueviolet);
+
+}
+
+.articles-item:hover p {
+    color: var(--black);
+
+}
+
+.articles-item:hover .grammar-arrow {
+    background: var(--black);
+}
+
 
 .articles-item-mobile {
     display: none;
@@ -881,6 +917,7 @@
     box-shadow: 0px 0px 16px 0px var(--light-black);
     background: var(--white2);
     gap: 4px;
+    transition: .3s;
 }
 
 .topic-icon {
@@ -900,6 +937,10 @@
 
 .topic-item b {
     font-weight: 700;
+}
+
+.topic-item:hover {
+    background: var(--blueviolet);
 }
 
 
@@ -939,6 +980,7 @@
     font-size: 18px;
     line-height: 24px;
     color: var(--black2);
+    transition: .3s;
 
 }
 
@@ -947,9 +989,22 @@
 
 }
 
+.dictionary-letter i {
+    transition: .3s;
+
+}
+
 .dictionary-letter.active i {
     background: var(--gray2);
 
+}
+
+.dictionary-letter:hover span {
+    color: var(--blueviolet);
+}
+
+.dictionary-letter:hover i {
+    background: var(--blueviolet);
 }
 
 .black-arrow {
@@ -1111,6 +1166,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .3s;
 
 
 }
@@ -1121,7 +1177,13 @@
     transition: .3s;
 }
 
+
 .test-question.active .question-icon {
+    background: var(--blueviolet);
+    border: 2px solid transparent;
+}
+
+.test-question:hover .question-icon {
     background: var(--blueviolet);
     border: 2px solid transparent;
 
@@ -1330,11 +1392,13 @@
     align-items: start;
 
 }
-.exam-links a:hover span{
+
+.exam-links a:hover span {
     color: var(--blueviolet);
 
 }
-.exam-links a:hover i{
+
+.exam-links a:hover i {
     background: var(--blueviolet);
 
 }
@@ -1477,6 +1541,7 @@
     background: var(--white2);
     box-shadow: 0px 0px 16px 0px var(--light-black);
     gap: 4px;
+    transition: .3s;
 
 }
 
@@ -1487,6 +1552,10 @@
     text-align: center;
     color: var(--black2);
 
+}
+
+.crosswords-item:hover {
+    background: var(--blueviolet);
 }
 
 .crossword-icon {
@@ -1698,8 +1767,9 @@
 
     .practice-item {
         padding: 12px;
-        max-width: 160px;
+        max-width: 100%;
         min-height: 107px;
+        flex: 1 1 48.1%;
         gap: 8px;
 
     }
@@ -2425,6 +2495,10 @@
 
     .beginner-link-icon {
         flex: unset;
+    }
+
+    .desktop-links {
+        display: none;
     }
 
     .grammar-first-link span {

@@ -63,3 +63,30 @@
     mask-image: url(check_circle.svg);
     -webkit-mask-image: url(check_circle.svg);
 }
+
+.question-mark{
+    mask-image: url(questionMark.svg);
+    -webkit-mask-image: url(questionMark.svg);
+}
+.logOut-icon{
+    mask-image: url(logOut.svg);
+    -webkit-mask-image: url(logOut.svg);
+}
+.icon-premium{
+    mask-image: url(premium.svg);
+    -webkit-mask-image: url(premium.svg);
+}
+.icon-premium-cart{
+    mask-image: url(premium.svg);
+    -webkit-mask-image: url(premium.svg);
+}
+.icon-play{
+    mask-image: url(playIcon.svg);
+    -webkit-mask-image: url(playIcon.svg);
+}
+
+.icon-pause{
+    mask-image: url(pause.svg);
+    -webkit-mask-image: url(pause.svg);
+}
+
