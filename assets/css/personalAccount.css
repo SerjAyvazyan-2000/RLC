@@ -1913,6 +1913,12 @@
         width: 100%;
         font-weight: 400;
     }
+    .account-info-decor{
+        width: 100%;
+    }
+    .account-info-decor img{
+        width: 100%;
+    }
 }
 
 @media (max-width: 400px) {
